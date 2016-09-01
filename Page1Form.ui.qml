@@ -7,8 +7,15 @@ Item {
     property alias button2: button2
     property alias button3: button3
 
+    GridLayout {
+    }
+
+    ColumnLayout {
+    }
+
     RowLayout {
-        anchors.centerIn: parent
+        x: 165
+        y: 220
 
         Button {
             id: button1
@@ -19,12 +26,12 @@ Item {
             id: button2
             text: qsTr("Press Me 2")
         }
-    }
 
-    Button {
-        id: button3
-        x: 270
-        y: 301
-        text: qsTr("Exit")
+        Button {
+            id: button3
+            text: qsTr("Exit")
+        }
+
+        anchors.centerIn: parent
     }
 }
