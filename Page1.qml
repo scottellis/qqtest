@@ -7,4 +7,7 @@ Page1Form {
     button2.onClicked: {
         console.log("Button 2 clicked.");
     }
+    button3.onClicked: {
+        Qt.quit();
+    }
 }

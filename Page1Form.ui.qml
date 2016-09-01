@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.0
 Item {
     property alias button1: button1
     property alias button2: button2
+    property alias button3: button3
 
     RowLayout {
         anchors.centerIn: parent
@@ -18,5 +19,12 @@ Item {
             id: button2
             text: qsTr("Press Me 2")
         }
+    }
+
+    Button {
+        id: button3
+        x: 270
+        y: 301
+        text: qsTr("Exit")
     }
 }
